@@ -58,8 +58,21 @@ export default function RegisterPage() {
                     </div>
                 </div>
 
+                {/* 🔥 เพิ่มส่วน Checkbox PDPA ตรงนี้ 🔥 */}
+                <div className="flex items-start gap-2 pt-2 pb-1">
+                    <input 
+                        type="checkbox" 
+                        id="pdpa" 
+                        required 
+                        className="mt-0.5 w-4 h-4 rounded border-neutral-700 bg-black/50 accent-teal-500 cursor-pointer"
+                    />
+                    <label htmlFor="pdpa" className="text-xs text-neutral-400 cursor-pointer select-none leading-relaxed">
+                        ฉันได้อ่านและยอมรับ <Link href="#" className="text-teal-400 hover:text-teal-300 hover:underline transition">ข้อตกลงการใช้งาน</Link> และ <Link href="#" className="text-teal-400 hover:text-teal-300 hover:underline transition">นโยบายคุ้มครองข้อมูลส่วนบุคคล (PDPA)</Link>
+                    </label>
+                </div>
+
                 <div className="pt-2">
-                    <button className="w-full bg-white text-black font-bold py-3 rounded-xl hover:bg-neutral-200 transition shadow-lg">
+                    <button className="w-full bg-teal-500 text-black font-bold py-3 rounded-xl hover:bg-teal-400 transition shadow-lg shadow-teal-500/20">
                         Create Account
                     </button>
                 </div>
